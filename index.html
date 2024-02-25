@@ -1,0 +1,241 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loginPage" class="loginPage">
+        <div id="LogsSection" class="LogsSection">
+            <div>pawn shop</div>
+
+            <button id="" class="Logs" onclick="Manager()">Manager
+                <span id="Manager">
+                    <input type="password" name="" id="ManagerPasswords" class="Managerpassword" placeholder="password">
+                </span>
+            </button> <br>
+
+            <button id="" class="Logs" onclick="Admin()">Admin 
+                <span id="Admin">
+                    <input type="password" name="" id="AdminPasswords" class="Adminpassword" placeholder="password">
+                </span> <br>
+            </button> <br>
+            <button id="Staff" class="Logs" onclick="Staff()">Staff
+                <span id="Stuff">
+                    <input type="password" name="" id="StaffPasswords" class="Stuffpassword  " placeholder="password"></span>
+            </button> <br>
+
+            <button id="CustomerView" class="Logs" onclick="CustomerView()">Customer View</button>
+        </div>
+    </div>
+
+    <div id="LogoSide">
+        <h4 class="LogoSideName">Pawn Shop Software</h5>
+    </div>
+
+    <!-- Top bar menu -->
+    <div id="Menu">
+        <button id="MenuStockAtHand" class="firstMenu">Stock at hand</button>
+        <button id="MenuLayByStock" class="firstMenu">Lay by stock</button>
+        <button id="MenuDamagedStock" class="firstMenu">Damaged stock</button>
+        <button id="MenuSoldStock" class="firstMenu">Sold stock</button>
+        <button id="MenuDeletedItems" class="firstMenu">Deleted Items</button>
+        <button id="MenuTransactions" class="firstMenu">Transactions</button>
+    </div>
+
+    <!-- Start of the added items and its prices -->
+
+    <div>
+        <div id="wall" class="wall">
+
+            <!-- The add item section -->
+
+            <button id="AddItem" onclick="AddItem()">Add item</button>
+            <div id="AddItemSectionWall">
+                <div id="AddItemSection">
+                    <div id="closeBtn">
+                        <button onclick="closeBtn()">&times;</button>
+                    </div>
+                    <input type="file" name="Picture" multiple id="file"> <br>
+                    <input type="text" name="ProductName" id="ProductName" placeholder="Product Name"> <br>
+                    <input type="text" name="ProductName" id="ProductName" placeholder="Condition"> <br>
+                    <input type="text" name="ProductName" id="ProductName" placeholder="Discription"> <br>
+                    <input type="number" name="Amount" id="Amount" placeholder="Amount"> <br>
+                    <button id="submitAddItemSection">submit</button>
+                </div>
+            </div>
+
+            <!-- shop Products and its discription and prices -->
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/grey's anatomy shared by ʙɪᴀ on We Heart It.jpeg" alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Blood flow checker</span> <br>
+                    Modal: <span>2018 cjc listener</span> <br>
+                    Condition: <span>very good</span> <br>
+                    Discription: <span>black rubber, white earbut, silver extender</span> <br>
+                    Price: <span>R800</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/How Do I Get Over Anxiety About Checking My Bank Account_.jpeg" alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Money Pig</span> <br>
+                    Modal: <span>2008</span> <br>
+                    Condition: <span>Good</span> <br>
+                    Discription: <span>With a few scratches, transparent</span> <br>
+                    Price: <span>R200</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/Kensie Gemstone Luggage Collection _ Bed Bath & Beyond.jpeg" alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Lagadge bags</span> <br>
+                    Modal: <span>2023 Gucci</span> <br>
+                    condition: <span>Good</span> <br>
+                    discription: <span>3 piece, silver</span> <br>
+                    Price: <span>R14 000</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/More Than Just a Pretty Case - Explore Retro Luggage Company, SteamLine - Live &Travel Beautifully.jpeg"
+                        alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Lagadge bags</span> <br>
+                    Modal: <span>2022 Chantel</span> <br>
+                    condition: <span>Good</span> <br>
+                    discription: <span>4 piece, White, brown and gold, 2 big, 1 square and 1 circle</span> <br>
+                    Price: <span>R18 000</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/No Gun.jpeg" alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Gaming guns, a play station and Big gaming screen</span> <br>
+                    Modal: <span>Guns : playstation, playstation 2,playstation 3,playstation 4, playstation 5 <br>
+                        playstation: playstation 3 and one joystick <br>
+                        Gaming Screen: Sony 4000ps, 40inch</span> <br>
+                    condition: <span>very</span> <br>
+                    discription: <span> </span> <br>
+                    Price: <span>R800</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/Premium Photo _ King golden chess standing of the falling silver chess with dark background_.jpeg"
+                        alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>cheers board</span> <br>
+                    Modal: <span>2018 cjc listener</span> <br>
+                    condition: <span>very</span> <br>
+                    discription: <span>clear</span> <br>
+                    Price: <span>R6 000</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/Travel Beautifully -  SteamLine Luggage creates the perfect travel companion - Travel Essentials.jpeg"
+                        alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Lagadge</span> <br>
+                    Modal: <span>2018 cjc listener</span> <br>
+                    condition: <span>very</span> <br>
+                    discription: <span>black rubber, white earbut, silver extender</span> <br>
+                    Price: <span>R800</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+                <div class="coverImg">
+                    <img src="./stock/Web capture_4-5-2023_113150_www.facebook.com.jpeg" alt="">
+                </div>
+                <div class="coverDetails">
+                    Name: <span>Mat</span> <br>
+                    Modal: <span>Dragon ball mat</span> <br>
+                    condition: <span>Very Good</span> <br>
+                    discription: <span>black rubber, white earbut, silver extender</span> <br>
+                    Price: <span>R80 000</span> <br>
+                    <div id="coverDetailsStockFunctions">
+                        <button id="coverDetailsSoldBtn" class="Sold">Sold</button>
+                        <button id="coverDetailsLayBy" class="LayBy">Lay By</button>
+                        <button id="coverDetailsDamaged" class="Damaged">Damaged</button>
+                        <button id="coverDetailsDeleted" class="Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="Data.js"></script>
+</body>
+
+</html>
+
+
+595DY8410N3
+M3JEMPX4

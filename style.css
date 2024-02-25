@@ -1,0 +1,93 @@
+#Menu {
+    display: flex;
+}
+
+.Logs {
+    width: 230px;
+    padding: 10px;
+    background-color: rgb(0, 217, 255);
+}
+.Logs:hover {
+    background-color: rgb(189, 241, 250);
+}
+.loginPage {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.firstMenu {
+    padding: 5px;
+    margin: 1px;
+    background-color: orange;
+}
+.cover {
+    display: flex;
+    margin: 10px;
+    border: 1px solid gainsboro;
+}
+
+img {
+    width: 100px;
+    margin: 10px;
+}
+#AddItemSectionWall {
+    background-color: rgb(0, 217, 255);
+    padding: 30px;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    display: none;
+}
+
+input {
+    width: 200px;
+    margin: 3px;
+}
+#submitAddItemSection {
+    padding: 5px;
+    margin: 20px;
+    background-color: green;
+    color: white;
+}
+
+#closeBtn {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    border: none;
+}
+
+#closeBtn button:hover {
+    background-color: red;
+    color: white;
+}
+.Sold {
+    background-color: green;
+    color: white;
+}
+.LayBy {
+    background-color: white;
+    color: green;
+}
+.Damaged {
+    background-color: orangered;
+    color: white;
+}
+.Delete {
+    background-color: red;
+    color: white;
+}
+
+/* Manager styles */
+#Manager input, #Admin input, #Staff input {
+    display: none;
+}
